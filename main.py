@@ -62,7 +62,8 @@ if __name__ == '__main__':
 
     if args.opr == 'train':
         ray.init(num_gpus=args.num_gpus, num_cpus=args.num_cpus,
-                 object_store_memory=args.object_store_memory)
+                #  object_store_memory=args.object_store_memory
+                 )
     else:
         ray.init()
 
